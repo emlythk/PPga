@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Artist Name</title>
-  <meta name="description" content="Official website for Your Artist Name." />
+  <title>Emy.thk — Official</title>
+  <meta name="description" content="Official artist page for Emy.thk. Music, links, and contact." />
 
   <style>
     body {
@@ -16,63 +16,100 @@
       align-items: center;
       justify-content: center;
       min-height: 100vh;
+      padding: 1rem;
     }
-
-    .container {
-      max-width: 600px;
-      padding: 2rem;
+    main {
+      max-width: 640px;
+      width: 100%;
       text-align: center;
     }
-
     h1 {
-      font-size: 2.4rem;
-      margin-bottom: 0.5rem;
+      font-size: 2.6rem;
+      margin-bottom: 0.2rem;
     }
-
     p {
       color: #b3b3b3;
-      margin-bottom: 2rem;
-      line-height: 1.6;
+      margin-bottom: 1.5rem;
     }
-
-    a {
-      display: block;
-      margin: 0.75rem 0;
-      padding: 0.85rem;
+    .links a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.85rem 1.2rem;
       border: 1px solid #222;
       border-radius: 8px;
       text-decoration: none;
       color: #f2f2f2;
       transition: 0.15s ease;
     }
-
-    a:hover {
+    .links a:hover {
       border-color: #1db954;
       color: #1db954;
     }
-
+    iframe {
+      border: none;
+      width: 100%;
+      max-width: 640px;
+      height: 152px;
+      margin: 1rem 0;
+    }
+    .track-list {
+      text-align: left;
+      margin-top: 2rem;
+    }
+    .track-list h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+    .track-list ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .track-list li {
+      margin: 0.4rem 0;
+      font-size: 1rem;
+      color: #ddd;
+    }
     footer {
       margin-top: 2.5rem;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       color: #777;
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <h1>Your Artist Name</h1>
-    <p>Official artist page. Music and links.</p>
+  <main>
+    <h1>emy.thk</h1>
+    <p>Official artist page. Music, links, and contact.</p>
 
-    <a href="https://open.spotify.com/artist/YOUR_ID" target="_blank">Spotify</a>
-    <a href="https://instagram.com/" target="_blank">Instagram</a>
-    <a href="https://soundcloud.com/" target="_blank">SoundCloud</a>
-    <a href="mailto:youremail@example.com">Contact</a>
+    <!-- Spotify Embed -->
+    <iframe
+      src="https://open.spotify.com/embed/artist/0KQo2DvfnEB0lAB2HRLZAp"
+      allow="encrypted-media"
+      loading="lazy">
+    </iframe>
+
+    <!-- Links -->
+    <div class="links">
+      <a href="https://open.spotify.com/artist/0KQo2DvfnEB0lAB2HRLZAp" target="_blank">Open in Spotify</a>
+      <a href="https://www.instagram.com/emy.thk/" target="_blank">Instagram</a>
+    </div>
+
+    <!-- Track List -->
+    <div class="track-list">
+      <h2>Track List</h2>
+      <ul>
+        <li>• Your Song Name (Spotify)</li>
+      </ul>
+      <p>More tracks coming soon.</p>
+    </div>
 
     <footer>
-      © <span id="year"></span> Your Artist Name
+      Business email: <a href="mailto:business@nottripping.fyi" style="color: #b3b3b3;">business@nottripping.fyi</a>
+      <br><br>
+      © <span id="year"></span> emy.thk
     </footer>
-  </div>
+  </main>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
